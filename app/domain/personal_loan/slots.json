@@ -1,0 +1,114 @@
+[
+  {
+    "name": "language",
+    "description": "Preferred conversation language",
+    "required": true,
+    "type": "enum",
+    "normalization_rule": "Map English/default to 'en' and Hindi, Hinglish, or Devanagari text to 'hi-IN'",
+    "examples": ["English", "Hindi", "Hinglish"]
+  },
+  {
+    "name": "consent",
+    "description": "Whether the customer agrees to continue with qualification questions",
+    "required": true,
+    "type": "boolean",
+    "normalization_rule": "Map yes/haan/sure to true and no/nahin/not now to false",
+    "examples": ["yes", "haan", "not now"]
+  },
+  {
+    "name": "interest",
+    "description": "Whether the customer is interested in a personal loan",
+    "required": true,
+    "type": "boolean",
+    "normalization_rule": "Map affirmative product intent to true and rejection/disinterest to false",
+    "examples": ["yes I need a loan", "not interested"]
+  },
+  {
+    "name": "city",
+    "description": "Customer city or service location",
+    "required": true,
+    "type": "string",
+    "normalization_rule": "Strip spaces and title-case city names",
+    "examples": ["Delhi", "ghaziabad", "Noida"]
+  },
+  {
+    "name": "employment_type",
+    "description": "Customer employment category",
+    "required": true,
+    "type": "enum",
+    "normalization_rule": "Normalize to salaried or self_employed using keyword mapping",
+    "examples": ["salaried", "job", "self employed", "business"]
+  },
+  {
+    "name": "monthly_income",
+    "description": "Customer monthly income in INR",
+    "required": true,
+    "type": "number",
+    "normalization_rule": "Convert formats like 35k, 35 thousand, 3.5 lakh into integer INR",
+    "examples": ["35000", "35k", "40 thousand"]
+  },
+  {
+    "name": "loan_amount",
+    "description": "Requested personal loan amount in INR",
+    "required": true,
+    "type": "number",
+    "normalization_rule": "Convert formats like 2 lakh, 250000, 4.5 lacs into integer INR",
+    "examples": ["2 lakh", "250000", "4.5 lacs"]
+  },
+  {
+    "name": "age",
+    "description": "Customer age in years",
+    "required": false,
+    "type": "number",
+    "normalization_rule": "Capture explicit age statements like age 27 or I am 30 years old",
+    "examples": ["27", "age 31", "I am 29 years old"]
+  },
+  {
+    "name": "work_experience_months",
+    "description": "Salaried work experience in months",
+    "required": false,
+    "type": "number",
+    "normalization_rule": "Convert 2 years to 24, 18 months to 18",
+    "examples": ["2 years", "18 months", "working for 3 years"]
+  },
+  {
+    "name": "business_vintage_months",
+    "description": "Self-employed business vintage in months",
+    "required": false,
+    "type": "number",
+    "normalization_rule": "Convert 1 year to 12, 24 months to 24",
+    "examples": ["1 year in business", "24 months"]
+  },
+  {
+    "name": "existing_monthly_emi",
+    "description": "Current total EMI burden per month in INR",
+    "required": false,
+    "type": "number",
+    "normalization_rule": "Convert spoken EMI burden to integer INR",
+    "examples": ["5000 EMI", "current emi 12000"]
+  },
+  {
+    "name": "loan_purpose",
+    "description": "Reason for taking the personal loan",
+    "required": false,
+    "type": "enum",
+    "normalization_rule": "Normalize to wedding, medical, travel, home_renovation, education, debt_consolidation, or other",
+    "examples": ["wedding", "medical", "travel", "renovation"]
+  },
+  {
+    "name": "callback_time",
+    "description": "Preferred callback time if the customer is busy",
+    "required": false,
+    "type": "string",
+    "normalization_rule": "Keep as trimmed free text for later scheduling",
+    "examples": ["tomorrow morning", "after 6 pm"]
+  },
+  {
+    "name": "human_assistance_requested",
+    "description": "Whether the customer explicitly requested a human representative",
+    "required": false,
+    "type": "boolean",
+    "normalization_rule": "Map human/callback to true when explicitly requested",
+    "examples": ["connect me to a person", "executive se baat"]
+  }
+]

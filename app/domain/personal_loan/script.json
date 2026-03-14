@@ -1,0 +1,155 @@
+{
+  "product": "personal_loan",
+  "supported_languages": ["en", "hi-IN"],
+  "sections": [
+    {
+      "id": "opening",
+      "name": "Opening",
+      "utterances": [
+        {
+          "language": "en",
+          "text": "Hello, this is Rajendra calling regarding your personal loan enquiry. This is a quick eligibility check and next-step call. I can continue in English or Hindi. Is this a good time?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Hello, main Rajendra bol raha hoon aapki personal loan enquiry ke regarding. Yeh ek quick eligibility aur next-step call hai. Main English ya Hindi mein continue kar sakta hoon. Kya abhi baat karna convenient hai?",
+          "pause_after": true
+        }
+      ]
+    },
+    {
+      "id": "interest_probe",
+      "name": "Interest Probe",
+      "utterances": [
+        {
+          "language": "en",
+          "text": "Just to confirm, are you currently looking for a personal loan?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Confirm karne ke liye pooch raha hoon, kya aap abhi personal loan dekh rahe hain?",
+          "pause_after": true
+        }
+      ]
+    },
+    {
+      "id": "core_qualification",
+      "name": "Core Qualification",
+      "utterances": [
+        {
+          "language": "en",
+          "text": "Which city are you based in?",
+          "pause_after": true
+        },
+        {
+          "language": "en",
+          "text": "Are you salaried or self-employed?",
+          "pause_after": true
+        },
+        {
+          "language": "en",
+          "text": "What is your approximate monthly income?",
+          "pause_after": true
+        },
+        {
+          "language": "en",
+          "text": "Roughly how much loan amount are you looking for?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Aap kis city mein based hain?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Aap salaried hain ya self-employed?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Aapki approximate monthly income kitni hai?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Lagbhag kitne amount ka loan chahiye?",
+          "pause_after": true
+        }
+      ]
+    },
+    {
+      "id": "optional_risk_profile",
+      "name": "Optional Risk Profile",
+      "utterances": [
+        {
+          "language": "en",
+          "text": "If you do not mind, may I also note your age, work experience or business vintage, and any current monthly EMI?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Agar aap comfortable hon, toh kya main aapki age, work experience ya business vintage, aur current monthly E-M-I bhi note kar loon?",
+          "pause_after": true
+        }
+      ]
+    },
+    {
+      "id": "busy_callback",
+      "name": "Busy Callback",
+      "utterances": [
+        {
+          "language": "en",
+          "text": "No problem. I can arrange a callback. What time would be best for you?",
+          "pause_after": true
+        },
+        {
+          "language": "hi-IN",
+          "text": "Koi baat nahi. Main callback arrange kar deta hoon. Aapke liye kaunsa time best rahega?",
+          "pause_after": true
+        }
+      ]
+    },
+    {
+      "id": "human_handoff",
+      "name": "Human Handoff",
+      "utterances": [
+        {
+          "language": "en",
+          "text": "Understood. I will arrange a callback from a loan specialist.",
+          "pause_after": false
+        },
+        {
+          "language": "hi-IN",
+          "text": "Samajh gaya. Main loan specialist ka callback arrange kar deta hoon.",
+          "pause_after": false
+        }
+      ]
+    },
+    {
+      "id": "safe_close",
+      "name": "Safe Close",
+      "utterances": [
+        {
+          "language": "en",
+          "text": "Thank you for your time. Please do not share OTP, CVV, full Aadhaar, or full card details on such calls.",
+          "pause_after": false
+        },
+        {
+          "language": "hi-IN",
+          "text": "Aapke time ke liye dhanyavaad. Kripya OTP, CVV, poora Aadhaar, ya poore card details aisi calls par share na karein.",
+          "pause_after": false
+        }
+      ]
+    }
+  ],
+  "security_rules": [
+    "Never ask for OTP, CVV, full card number, or full Aadhaar number.",
+    "Use only fictitious sensitive data in demos.",
+    "Mask sensitive values in logs and transcripts.",
+    "If the user asks to share sensitive details, redirect to secure official channels or a human agent.",
+    "Do not promise loan approval on this call."
+  ]
+}

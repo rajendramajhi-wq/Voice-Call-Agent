@@ -1,0 +1,62 @@
+[
+  {
+    "name": "consent_yes",
+    "description": "Customer agrees to continue the call.",
+    "sample_utterances": ["Yes, go ahead", "Sure", "Haan boliye"]
+  },
+  {
+    "name": "consent_no",
+    "description": "Customer does not want to continue the call.",
+    "sample_utterances": ["No", "Not now", "Abhi nahi"]
+  },
+  {
+    "name": "interest_yes",
+    "description": "Customer is interested in a personal loan.",
+    "sample_utterances": ["Yes, I need a personal loan", "I am interested", "Haan mujhe loan chahiye"]
+  },
+  {
+    "name": "interest_no",
+    "description": "Customer is not interested in the product.",
+    "sample_utterances": ["No need", "I am not interested", "Mujhe interest nahi hai"]
+  },
+  {
+    "name": "language_switch_hi",
+    "description": "Customer prefers Hindi or code-mixed Hindi-English.",
+    "sample_utterances": ["Hindi mein baat kariye", "Can we speak in Hindi?", "Hinglish chalega"]
+  },
+  {
+    "name": "salary_disclose",
+    "description": "Customer shares monthly income.",
+    "sample_utterances": ["My salary is 35000", "I earn 55k", "Meri salary 40 hazaar hai"]
+  },
+  {
+    "name": "loan_amount_disclose",
+    "description": "Customer shares required loan amount.",
+    "sample_utterances": ["I need 3 lakh", "Around 250000", "Mujhe 5 lakh chahiye"]
+  },
+  {
+    "name": "employment_disclose",
+    "description": "Customer shares employment type.",
+    "sample_utterances": ["I am salaried", "I am self employed", "Main job karta hoon"]
+  },
+  {
+    "name": "city_disclose",
+    "description": "Customer shares city or service location.",
+    "sample_utterances": ["I live in Delhi", "Ghaziabad", "Main Noida mein hoon"]
+  },
+  {
+    "name": "objection_busy",
+    "description": "Customer is busy and prefers callback.",
+    "sample_utterances": ["Call me later", "I am busy", "Baad mein call kariye"]
+  },
+  {
+    "name": "ask_human",
+    "description": "Customer requests a human representative.",
+    "sample_utterances": ["Connect me to a person", "Human agent", "Kisi executive se baat karni hai"]
+  },
+  {
+    "name": "ambiguous",
+    "description": "Response is unclear and requires clarification.",
+    "sample_utterances": ["Maybe", "I am not sure", "Dekhte hain"]
+  }
+]
